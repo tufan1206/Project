@@ -8,13 +8,11 @@ body {
   padding: 10px;
   display: flex;
   justify-content: space-between;
-  /* Align items to the left and right */
   align-items: center;
 }
 
 #logo img {
   height: 70px;
-  /* Adjust the height of the logo as needed */
   margin-left: 72px;
 }
 
@@ -27,12 +25,10 @@ ul {
 
 .item {
   margin-right: 15px;
-  /* Add spacing between the navigation items */
 }
 
 .item:last-child {
   margin-right: 120px;
-  /* Remove margin from the last item */
 }
 
 .item a {
@@ -51,40 +47,21 @@ ul {
 
 
 #product {
-
   width: 100%;
-  /*display: flex;
-    justify-content: space-around;*/
-
 }
 
-/*.container {
-    margin-top: 80px;
-    display: flex;
-    flex-direction: column;
-    background-color: aqua;
-    padding: 3px 100px;
-    height: 400px;
-    width: 430px;
-    border-radius: 20px;
-    position: relative; 
 
-}*/
 .container {
   display: flex;
   margin-top: 80px;
   flex-direction: column;
   padding: 3px 20px;
-  /* Adjust the padding */
   height: 400px;
   width: 470px;
   position: relative;
   background: rgba(255, 255, 255, 0.15);
-  /* Translucent background */
   border-radius: 10px;
-  /* Rounded corners */
   backdrop-filter: blur(3px);
-  /* Blurred backdrop */
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -93,19 +70,12 @@ ul {
   justify-content: space-around;
 }
 
-/*.imag{
-    margin-top: 80px;
-    height: 400px;
-    width: 430px;
-    border-radius: 20px;
-}*/
 .imag {
   margin-top: 80px;
   height: 400px;
   width: 430px;
   border-radius: 20px;
   animation: fadeIn 1s ease-in-out;
-  /* Animation properties */
   animation-duration: 4s;
   animation-iteration-count: infinite;
   box-shadow: 0 0 10px rgba(255, 255, 255, 1.5);
@@ -151,7 +121,6 @@ ul {
 
 .bt {
   margin-top: 45px;
-  /* Add space between button and container */
   margin-left: 100px;
   background-color: #4caf50;
   color: white;
@@ -160,11 +129,8 @@ ul {
   border: none;
   cursor: pointer;
   background: rgba(255, 255, 255, 0.15);
-  /* Translucent background */
   border-radius: 10px;
-  /* Rounded corners */
   backdrop-filter: blur(10px);
-  /* Blurred backdrop */
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   animation: but 1s ease-in-out;
   animation-duration: 4s;
