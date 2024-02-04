@@ -1,0 +1,186 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+#navbar {
+  background: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  /* Align items to the left and right */
+  align-items: center;
+}
+
+#logo img {
+  height: 70px;
+  /* Adjust the height of the logo as needed */
+  margin-left: 72px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.item {
+  margin-right: 15px;
+  /* Add spacing between the navigation items */
+}
+
+.item:last-child {
+  margin-right: 120px;
+  /* Remove margin from the last item */
+}
+
+.item a {
+  text-decoration: none;
+  color: black;
+  padding: 7px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.item a:hover {
+  color: white;
+  background-color: rgb(206, 203, 203);
+  border-radius: 20px;
+}
+
+
+#product {
+
+  width: 100%;
+  /*display: flex;
+    justify-content: space-around;*/
+
+}
+
+/*.container {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    background-color: aqua;
+    padding: 3px 100px;
+    height: 400px;
+    width: 430px;
+    border-radius: 20px;
+    position: relative; 
+
+}*/
+.container {
+  display: flex;
+  margin-top: 80px;
+  flex-direction: column;
+  padding: 3px 20px;
+  /* Adjust the padding */
+  height: 400px;
+  width: 470px;
+  position: relative;
+  background: rgba(255, 255, 255, 0.15);
+  /* Translucent background */
+  border-radius: 10px;
+  /* Rounded corners */
+  backdrop-filter: blur(3px);
+  /* Blurred backdrop */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.box {
+  display: flex;
+  justify-content: space-around;
+}
+
+/*.imag{
+    margin-top: 80px;
+    height: 400px;
+    width: 430px;
+    border-radius: 20px;
+}*/
+.imag {
+  margin-top: 80px;
+  height: 400px;
+  width: 430px;
+  border-radius: 20px;
+  animation: fadeIn 1s ease-in-out;
+  /* Animation properties */
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 1.5);
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0.2;
+  }
+
+  50% {
+    opacity: 0.9;
+  }
+
+  100% {
+    opacity: 0.2;
+  }
+}
+
+
+
+#product::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.7;
+  background: url('background.webp')no-repeat center;
+  background-size: cover;
+}
+
+
+.primary {
+  font-size: 50px;
+  padding: 10px;
+}
+
+#product p {
+
+  font-size: 20px;
+}
+
+.bt {
+  margin-top: 45px;
+  /* Add space between button and container */
+  margin-left: 100px;
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.15);
+  /* Translucent background */
+  border-radius: 10px;
+  /* Rounded corners */
+  backdrop-filter: blur(10px);
+  /* Blurred backdrop */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  animation: but 1s ease-in-out;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes but {
+  100% {
+    opacity: 0.9;
+  }
+
+  50% {
+    opacity: 0.2;
+  }
+
+  0% {
+    opacity: 0.9;
+  }
+}
